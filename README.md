@@ -1,27 +1,36 @@
-Bem-vindo ao meu Jogo de Wordle em SPA!
-Você é fã de Wordle? Eu também sou! É por isso que decidi criar uma experiência de jogo Wordle totalmente nova, diretamente em Single Page Application (SPA). Esta é uma oportunidade emocionante para testar minhas habilidades de programação enquanto mergulho mais fundo no mundo da criação de jogos.
+Welcome to my Wordle Game in SPA!
+Are you a Wordle fan? Well, I am! That's why I decided to create a brand new Wordle gaming experience, right in a Single Page Application (SPA). This is an exciting opportunity to test my programming skills while diving deeper into the world of game development.
 
-Por que este jogo é especial:
-Experiência imersiva: Desfrute da familiar diversão de Wordle em um ambiente web moderno e responsivo.
-Desafie-se: Teste suas habilidades de adivinhação de palavras enquanto compete contra o tempo e trabalha para descobrir a palavra secreta.
-Personalização: Adapte a dificuldade do jogo de acordo com suas preferências e nível de habilidade.
+Why this game is special:
+Immersive experience: Enjoy the familiar fun of Wordle in a modern, responsive web environment.
+Challenge yourself: Test your word-guessing skills as you race against the clock and work to uncover the secret word.
+Customization: Tailor the game difficulty to your preferences and skill level.
 
-Como jogar:
-Insira sua palavra de cinco letras e veja quantas letras estão corretas e se estão na posição certa.
-Feedback visual: As letras serão destacadas de acordo com sua precisão:
-Vermelho: Se a letra não estiver na palavra correta.
-Amarelo: Se a letra estiver na palavra correta, mas na posição errada.
-Verde: Se a letra estiver na posição correta e na palavra correta.
-Com base no feedback, refine suas suposições até descobrir a palavra correta!
-Divirta-se compartilhando suas pontuações e desafiando seus amigos para ver quem é o mestre de Wordle!
+How to Play:
+Enter your five-letter word and see how many letters are correct and if they are in the correct position.
+Visual Feedback: Letters will be highlighted according to your accuracy:
+Red: If the letter is not in the correct word.
+Yellow: If the letter is in the correct word but in the wrong position.
+Green: If the letter is in the correct position and in the correct word.
+Based on the feedback, refine your guesses until you discover the correct word!
+Have fun sharing your scores and challenging your friends to see who's the Wordle master!
 
-Como contribuir:
-Sinta-se à vontade para explorar o código-fonte, fornecer feedback e contribuir para tornar esta SPA de Wordle ainda melhor!
-Para começar, siga estas etapas:
-Clone este repositório em sua máquina local.
-Explore os arquivos e mergulhe na estrutura do código.
-Faça suas melhorias e sugira novos recursos através de pull requests.
+Technologies Used:
+JavaScript ES6: We utilized the power of JavaScript ES6 to create efficient and modern game logic.
+HTML: The basic structure of the game was built with HTML to create a solid foundation for the user interface.
+CSS: We used CSS to style and bring the game to life, ensuring a visually appealing and cohesive experience.
+SPA (Single Page Application): This game is a Single Page Application, meaning you can navigate and enjoy all the game's functionality without needing to reload the page, providing a smooth and uninterrupted experience.
+jQuery: jQuery was used to simplify the process of DOM manipulation and interaction with page elements, making development more efficient.
+DOM (Document Object Model): We used the DOM to dynamically interact with HTML elements and update the user interface based on player actions.
+MVC (Model-View-Controller): We adopted the MVC pattern to organize the code in a clear and modular way, separating the business logic (Model), presentation (View), and control (Controller), facilitating maintenance and extension of the game.
 
-Divirta-se!
-Estou animado para compartilhar esta experiência de Wordle com você. Vamos jogar e explorar juntos o mundo das palavras! Se você tiver alguma dúvida ou sugestão, não hesite em entrar em contato. Divirta-se jogando! 🎉🔤
+How to Contribute:
+Feel free to explore the source code, provide feedback, and contribute to making this Wordle SPA even better!
+To get started, follow these steps:
+Clone this repository to your local machine.
+Explore the files and dive into the code structure.
+Make your improvements and suggest new features through pull requests.
+
+Have Fun!
+I'm excited to share this Wordle experience with you. Let's play and explore the world of words together! If you have any questions or suggestions, feel free to contact us. Have fun playing! 🎉🔤
 
