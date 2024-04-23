@@ -1,20 +1,20 @@
 let homeView = {
     show: () => {
         console.log("homeshow");
-        $('.title').html('Home Page');
+        $('.title').html('Do you like to play Wordle? Lets go');
 
         $('#content').empty();
         $('#content').html(
             "<form>" +
-            "<label>Nome</label>" +
+            "<label>Name</label>" +
             "<input type='text' class='normal'>" +
-            "<label>Nivel</label>" +
+            "<label>Level</label>" +
             "<select>" +
-            "<option>JoãoPedro</option>" +
-            "<option>Jedi</option>" +
-            "<option>MasterCode</option>" +
-            "<option>Padawan</option>" +
-            "<option>Cadet</option>" +
+            "<option>Me</option>" +
+            "<option>Einstein</option>" +
+            "<option>Genius</option>" +
+            "<option>Child</option>" +
+            "<option>Baby</option>" +
             "</select>" +
             "</form><h2>" +
             "This game is extremely difficult<br>" +

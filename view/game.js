@@ -1,7 +1,7 @@
 let gameView = {
     show: () => {
         console.log("gameshow");
-        $('.title').html('Trabalho do Mic mas nivel acima');
+        $('.title').html('Wordle but better');
 
         $('#content').empty();
         $('#content').html(
@@ -26,7 +26,6 @@ let gameView = {
         console.log($(".normal").val());
 
         $('#start').on('click', () => {
-            console.log("entrouuu");
             if(win){
                 console.log("wiun");
                 window.location.hash = "win";
@@ -40,21 +39,17 @@ let gameView = {
 let win = false;
 let index;
 let tentativas = 0;
-var str1 = "prego";
+var str1 = "chose";
 var strArr = str1.split("");
 function start() {
     $(document).keyup(event => {
         for (index = 0; index < 5; index++) {
-
             if ($("#input" + index).is(":focus") && event.key == "Enter" && $("#input" + index).val().length===5) {
-                console.log(index);
                 analise($("#input" + index).val());
                 $('#input' + index).attr("readonly", true);
                 $("#input" + (index + 1)).focus();
                 break;
             }
-
-
         }
 
     })
@@ -68,34 +63,26 @@ function analise(input) {
     var inputChar = input.split("");
     for (let i = 0; i < strArr.length; i++) {
         if (inputChar[i] === strArr[i]) {
-            console.log("acertou");
             str += '<span class="green">' + inputChar[i] + '</span>';
         }
         else if (inputChar[i] === strArr[1]) {
             str += '<span class="yellow">' + inputChar[i] + '</span>';
-            console.log("quase");
         } else if (inputChar[i] === strArr[2]) {
             str += '<span class="yellow">' + inputChar[i] + '</span>';
-            console.log("quase");
         } else if (inputChar[i] === strArr[3]) {
             str += '<span class="yellow">' + inputChar[i] + '</span>';
-            console.log("quase");
         } else if (inputChar[i] === strArr[4]) {
             str += '<span class="yellow">' + inputChar[i] + '</span>';
-            console.log("quase");
         } else if (inputChar[i] === strArr[0]) {
             str += '<span class="yellow">' + inputChar[i] + '</span>';
-            console.log("quase");
         }
         else {
-            console.log("errou");
             str += '<span class="red">' + inputChar[i] + '</span>';
         }
 
     }
     if ($("#input" + index).val() === str1) {
         win = true;
-        console.log("deu");
         $("#start").html("Ganhaste")
         $("input").remove();
     }
