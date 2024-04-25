@@ -24,6 +24,9 @@ jQuery: jQuery was used to simplify the process of DOM manipulation and interact
 DOM (Document Object Model): We used the DOM to dynamically interact with HTML elements and update the user interface based on player actions.
 MVC (Model-View-Controller): We adopted the MVC pattern to organize the code in a clear and modular way, separating the business logic (Model), presentation (View), and control (Controller), facilitating maintenance and extension of the game.
 
+Play Now:
+You can play the game right away without needing to clone the repository! Just visit [Wordle SPA](https://wordle-alpha-peach.vercel.app) and start guessing!
+
 How to Contribute:
 Feel free to explore the source code, provide feedback, and contribute to making this Wordle SPA even better!
 To get started, follow these steps:
@@ -31,6 +34,7 @@ Clone this repository to your local machine.
 Explore the files and dive into the code structure.
 Make your improvements and suggest new features through pull requests.
 
+If you want
 Have Fun!
 I'm excited to share this Wordle experience with you. Let's play and explore the world of words together! If you have any questions or suggestions, feel free to contact us. Have fun playing! 🎉🔤
 
