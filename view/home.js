@@ -58,7 +58,7 @@ let homeView = {
          * @memberof homeView.show
          * @param {string} text - The content to be displayed on the start button.
          */
-        $('#start').html('Começar');
+        $('#start').html('Start Game');
 
         /**
          * Adds a click event listener to the start button.
