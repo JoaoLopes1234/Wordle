@@ -9,7 +9,6 @@ let loseView = {
         /**
          * Logs "homeshow" to the console.
          */
-        console.log("homeshow");
 
         /**
          * Changes the title text to "You lose :(".

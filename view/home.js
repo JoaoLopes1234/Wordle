@@ -65,7 +65,6 @@ let homeView = {
          */
         $("#start").on("click", () => {
             if ($('.normal').val() === '') {
-                console.log("casca");
                 $('.reds').html('Please, enter your name');
             } else {
                 window.location.hash = "game";
