@@ -7,6 +7,7 @@ input {
     padding: 5px;
     letter-spacing: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 15px;
 }
 
 #centro {
@@ -33,6 +34,7 @@ body {
 }
 
 .conteudo {
+
     font-size: 100px;
     margin: 10px;
     text-align: center;
@@ -42,6 +44,7 @@ body {
         1px -1px 0 black,
         -1px 1px 0 black,
         1px 1px 0 black;
+    border-radius: 20px;
 }
 
 .normal {
@@ -59,3 +62,56 @@ form {
 
     margin: 20px;
 }
+
+.reds {
+    font-size: 10px;
+    color: red;
+}
+
+@media screen and (max-width: 500px) {
+    input {
+        height: 120px;
+        width: 300px;
+        margin: 10px;
+        font-size: 70px;
+        text-align: center;
+        padding: 5px;
+        letter-spacing: 10px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+
+    }
+
+}
+
+/* Estilo básico para o botão */
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: #1e90ff; /* Dodger Blue */
+    color: white; /* Cor do texto */
+    transition: background-color 0.3s, color 0.3s; /* Transição suave de cores */
+  }
+  
+  /* Estilo quando o cursor passa sobre o botão */
+  button:hover {
+    background-color: #0056b3; /* Cor de fundo mais escura */
+  }
+  
+  /* Estilo quando o botão é clicado */
+  button:active {
+    background-color: #004080; /* Cor de fundo ainda mais escura */
+  }
+  
+  /* Estilo para botões grandes */
+  button.large {
+    padding: 15px 30px;
+    font-size: 18px;
+  }
+  

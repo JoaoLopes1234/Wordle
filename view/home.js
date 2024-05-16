@@ -7,7 +7,7 @@ let homeView = {
      * Displays the home view.
      * @memberof homeView
      */
-    show: function() {
+    show: function () {
         /**
          * Selects the title element and sets its HTML content.
          * @memberof homeView.show
@@ -29,12 +29,13 @@ let homeView = {
         $('#content').html(
             "<form id='form'>" +
             "<label>Name</label>" +
-            "<input type='text' class='normal' name='name'>" +
+            "<input type='text' class='normal'>" +
+            "<span class='reds'></span>" +
             /* "<label>Language</label>" + */
             /* "<select id='language' name='language'>" +
             "<option>english</option>" +
             "<option>portugues</option>" +
-            "</select>" + */
+            "</select>" + */ 
             "</form><h2>" +
             "This game is extremely difficult<br>" +
             "I will give you some advices: <br>" +
@@ -49,9 +50,7 @@ let homeView = {
          * Defines a function to be called when the form is submitted.
          * @memberof homeView.show
          */
-        function send() {
-            $("#form").submit();
-        }
+
 
         /**
          * Sets the HTML content of the start button.
@@ -65,18 +64,24 @@ let homeView = {
          * @memberof homeView.show
          */
         $("#start").on("click", () => {
-            window.location.hash = "game";
-        });
-
-        /**
-         * Adds an event listener to the document for the 'keyup' event.
-         * @memberof homeView.show
-         */
-        $(document).keyup(event => {
-            if (event.key == "Enter") {
+            if ($('.normal').val() === '') {
+                console.log("casca");
+                $('.reds').html('Please, enter your name');
+            } else {
                 window.location.hash = "game";
             }
         });
+
+        $('input').keydown(function (event) {
+            // Verifica se a tecla pressionada é "Enter"
+            if (event.keyCode === 13) {
+                // Evita o comportamento padrão de enviar o formulário
+                event.preventDefault();
+                // Adicione aqui o código para manipular a submissão do formulário, se necessário
+            }
+        });
+
+
     }
 };
 

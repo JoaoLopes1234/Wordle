@@ -2,11 +2,8 @@
  * This script is the entry point for our application.
  * It initializes the router and logs a message to the console when the document is ready.
  *
- * @fileoverview
  * This file contains the main entry point for our application.
  *
- * @author Tabnine
- * @version 1.0.0
  */
 
 import router from "./router.js";
